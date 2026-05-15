@@ -1,0 +1,24 @@
+﻿.page {
+  padding: 18px;
+}
+
+.input,
+.field,
+.note {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.note {
+  min-height: 88px;
+}
+
+.primary {
+  background: #111827;
+  color: #ffffff;
+}

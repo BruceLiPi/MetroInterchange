@@ -1,0 +1,6 @@
+﻿{
+  "usingComponents": {
+    "reminder-modal": "../../components/reminder-modal/reminder-modal"
+  },
+  "navigationBarTitleText": "行程中"
+}

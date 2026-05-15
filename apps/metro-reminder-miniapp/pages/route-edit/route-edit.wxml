@@ -1,0 +1,18 @@
+﻿<view class="page">
+  <input class="input" value="{{name}}" placeholder="路线名称" bindinput="handleNameInput" />
+
+  <picker range="{{lines}}" range-key="name" bindchange="handleLineChange">
+    <view class="field">线路：{{selectedLineName}}</view>
+  </picker>
+
+  <picker range="{{stations}}" range-key="name" bindchange="handleStartChange">
+    <view class="field">起点：{{startStationName}}</view>
+  </picker>
+
+  <picker range="{{stations}}" range-key="name" bindchange="handleEndChange">
+    <view class="field">终点：{{endStationName}}</view>
+  </picker>
+
+  <textarea class="note" value="{{transferNote}}" placeholder="换乘备注" bindinput="handleNoteInput" />
+  <button class="primary" bindtap="handleSave">保存路线</button>
+</view>

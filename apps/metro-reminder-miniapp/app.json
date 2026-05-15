@@ -1,0 +1,17 @@
+﻿{
+  "pages": [
+    "pages/home/home",
+    "pages/route-edit/route-edit",
+    "pages/trip-confirm/trip-confirm",
+    "pages/trip/trip",
+    "pages/settings/settings"
+  ],
+  "window": {
+    "navigationBarTitleText": "换乘提醒",
+    "navigationBarBackgroundColor": "#111827",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F7FA"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

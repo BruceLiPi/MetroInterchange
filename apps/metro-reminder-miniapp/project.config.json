@@ -1,0 +1,12 @@
+﻿{
+  "miniprogramRoot": "./",
+  "compileType": "miniprogram",
+  "setting": {
+    "useCompilerPlugins": ["typescript"],
+    "enhance": true,
+    "postcss": true,
+    "minified": true
+  },
+  "appid": "touristappid",
+  "projectname": "metro-reminder-miniapp"
+}

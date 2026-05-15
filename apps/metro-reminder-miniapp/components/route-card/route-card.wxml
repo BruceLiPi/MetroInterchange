@@ -1,0 +1,4 @@
+﻿<view class="card" bindtap="handleTap">
+  <view class="name">{{name}}</view>
+  <view class="summary">{{summary}}</view>
+</view>

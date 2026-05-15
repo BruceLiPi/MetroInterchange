@@ -1,0 +1,14 @@
+﻿{
+  "name": "metro-interchange",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.33.4",
+  "scripts": {
+    "test": "pnpm --filter @metro-interchange/metro-core test",
+    "typecheck": "pnpm --filter @metro-interchange/metro-core typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.4"
+  }
+}

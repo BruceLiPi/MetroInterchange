@@ -1,0 +1,22 @@
+﻿<view class="page">
+  <picker range="{{strengthOptions}}" bindchange="handleStrengthChange">
+    <view class="field">提醒强度：{{strengthLabel}}</view>
+  </picker>
+
+  <picker range="{{strongSecondsOptions}}" bindchange="handleStrongSecondsChange">
+    <view class="field">强提醒：提前{{strongReminderSecondsBefore}}秒</view>
+  </picker>
+
+  <view class="field row">
+    <text>震动</text>
+    <switch checked="{{vibrationEnabled}}" bindchange="handleVibrationChange" />
+  </view>
+
+  <view class="field row">
+    <text>声音</text>
+    <switch checked="{{soundEnabled}}" bindchange="handleSoundChange" />
+  </view>
+
+  <view class="version">线路库：{{dataVersion}}</view>
+  <button class="danger" bindtap="handleClear">清除本地数据</button>
+</view>

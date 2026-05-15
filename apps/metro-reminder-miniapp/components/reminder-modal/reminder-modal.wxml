@@ -1,0 +1,7 @@
+﻿<view wx:if="{{visible}}" class="mask">
+  <view class="modal">
+    <view class="title">{{title}}</view>
+    <view class="body">{{body}}</view>
+    <button class="primary" bindtap="handleConfirm">知道了</button>
+  </view>
+</view>

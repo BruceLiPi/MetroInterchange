@@ -1,0 +1,15 @@
+﻿<view class="page">
+  <view class="header">
+    <view class="title">换乘提醒</view>
+    <navigator url="/pages/settings/settings" class="settings">设置</navigator>
+  </view>
+
+  <view class="routes">
+    <route-card wx:for="{{routes}}" wx:key="id" route-id="{{item.id}}" name="{{item.name}}" summary="{{item.summary}}" bind:start="handleStartRoute" />
+  </view>
+
+  <button class="primary" bindtap="handleTemporaryRoute">临时路线</button>
+  <button class="secondary" bindtap="handleCreateRoute">新增固定路线</button>
+
+  <view class="coverage">武汉地铁：1、2、4、6、8号线</view>
+</view>

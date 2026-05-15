@@ -1,0 +1,6 @@
+﻿{
+  "usingComponents": {
+    "route-card": "../../components/route-card/route-card"
+  },
+  "navigationBarTitleText": "换乘提醒"
+}

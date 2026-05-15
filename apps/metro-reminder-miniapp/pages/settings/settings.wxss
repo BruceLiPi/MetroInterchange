@@ -1,0 +1,27 @@
+﻿.page {
+  padding: 18px;
+}
+
+.field {
+  margin-bottom: 12px;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.version {
+  margin: 18px 0;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.danger {
+  color: #b91c1c;
+}

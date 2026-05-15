@@ -1,0 +1,31 @@
+﻿.mask {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(17, 24, 39, 0.45);
+}
+
+.modal {
+  width: 80%;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.body {
+  margin: 12px 0 18px;
+  color: #374151;
+}
+
+.primary {
+  background: #111827;
+  color: #ffffff;
+}

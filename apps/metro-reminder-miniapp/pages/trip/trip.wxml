@@ -1,0 +1,19 @@
+﻿<view class="page">
+  <view class="status">
+    <view class="label">当前站</view>
+    <view class="station">{{currentStationName}}</view>
+    <view class="next">下一站：{{nextStationName}}</view>
+  </view>
+
+  <view class="target">{{targetText}}</view>
+  <view class="warning" wx:if="{{warningText}}">{{warningText}}</view>
+
+  <view class="actions">
+    <button bindtap="handlePrevious">上一站</button>
+    <button bindtap="handleNext">下一站</button>
+  </view>
+
+  <button class="secondary" bindtap="handleEndTrip">结束行程</button>
+
+  <reminder-modal visible="{{reminderVisible}}" title="{{reminderTitle}}" body="{{reminderBody}}" bind:confirm="handleReminderConfirm" />
+</view>
