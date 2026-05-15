@@ -1,4 +1,4 @@
-﻿import { DEFAULT_REMINDER_SETTINGS } from '../settings/defaults';
+import { DEFAULT_REMINDER_SETTINGS } from '../settings/defaults';
 import type { ReminderSettings, Route, TimingProfile } from '../types';
 
 export interface LocalState {

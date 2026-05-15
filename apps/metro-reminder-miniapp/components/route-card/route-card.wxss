@@ -1,4 +1,4 @@
-﻿.card {
+.card {
   padding: 16px;
   background: #ffffff;
   border: 1px solid #e5e7eb;

@@ -1,4 +1,4 @@
-﻿import type { Trip } from '../types';
+import type { Trip } from '../types';
 
 export function advanceTrip(trip: Trip, now: number): Trip {
   let elapsedSeconds = Math.max(0, Math.floor((now - trip.startedAt) / 1000));

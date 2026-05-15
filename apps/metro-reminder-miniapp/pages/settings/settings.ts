@@ -1,4 +1,4 @@
-﻿import { clearLocalState, loadLocalState, saveLocalState } from '../../services/localStore';
+import { clearLocalState, loadLocalState, saveLocalState } from '../../services/localStore';
 import { wuhanMetroData, type ReminderSettings } from '../../services/coreAdapter';
 
 const strengthOptions = ['安静', '明显', '防睡过'];

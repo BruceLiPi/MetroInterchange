@@ -1,4 +1,4 @@
-﻿import { wuhanMetroData } from '../data/wuhan';
+import { wuhanMetroData } from '../data/wuhan';
 import type { Route, TripStep, TripTarget } from '../types';
 
 export interface RoutePlan {

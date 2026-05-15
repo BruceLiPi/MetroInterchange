@@ -1,4 +1,4 @@
-﻿import type { StationId, TimingProfile } from '../types';
+import type { StationId, TimingProfile } from '../types';
 
 function segmentKey(fromStationId: StationId, toStationId: StationId): string {
   return `${fromStationId}->${toStationId}`;

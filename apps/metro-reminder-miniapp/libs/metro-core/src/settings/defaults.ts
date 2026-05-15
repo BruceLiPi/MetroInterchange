@@ -1,4 +1,4 @@
-﻿import type { ReminderSettings } from '../types';
+import type { ReminderSettings } from '../types';
 
 export const DEFAULT_REMINDER_SETTINGS: ReminderSettings = {
   strength: 'quiet',

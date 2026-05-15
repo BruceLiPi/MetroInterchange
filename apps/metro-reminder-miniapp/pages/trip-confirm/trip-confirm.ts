@@ -1,4 +1,4 @@
-﻿import { createTrip, wuhanMetroData, type Route } from '../../services/coreAdapter';
+import { createTrip, wuhanMetroData, type Route } from '../../services/coreAdapter';
 import { loadLocalState, saveLocalState } from '../../services/localStore';
 
 function stationName(stationId?: string): string {

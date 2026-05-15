@@ -1,4 +1,4 @@
-﻿import { loadLocalState } from '../../services/localStore';
+import { loadLocalState } from '../../services/localStore';
 
 Page({
   data: {

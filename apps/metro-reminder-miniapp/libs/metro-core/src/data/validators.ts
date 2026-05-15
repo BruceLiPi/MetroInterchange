@@ -1,4 +1,4 @@
-﻿import type { MetroDataSet } from '../types';
+import type { MetroDataSet } from '../types';
 
 export function validateMetroDataSet(data: MetroDataSet): string[] {
   const errors: string[] = [];

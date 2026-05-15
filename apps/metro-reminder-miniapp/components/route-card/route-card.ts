@@ -1,4 +1,4 @@
-﻿Component({
+Component({
   properties: {
     routeId: String,
     name: String,

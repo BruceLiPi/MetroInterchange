@@ -1,4 +1,4 @@
-﻿import { buildRoutePlan } from '../routing/buildRoutePlan';
+import { buildRoutePlan } from '../routing/buildRoutePlan';
 import type { Route, Trip } from '../types';
 
 export function createTrip(route: Route, startedAt: number): Trip {

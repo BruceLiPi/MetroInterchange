@@ -1,4 +1,4 @@
-﻿import type { CorrectionEvent, StationId, Trip } from '../types';
+import type { CorrectionEvent, StationId, Trip } from '../types';
 
 export function correctTripToStation(trip: Trip, stationId: StationId, source: CorrectionEvent['source'], at: number): Trip {
   const matchingStepIndex = trip.steps.findIndex((step) => step.toStationId === stationId);

@@ -1,4 +1,4 @@
-﻿export type LineId = string;
+export type LineId = string;
 export type StationId = string;
 export type RouteId = string;
 

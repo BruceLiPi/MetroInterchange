@@ -1,4 +1,4 @@
-﻿import type { ReminderEvent, ReminderSettings } from './coreAdapter';
+import type { ReminderEvent, ReminderSettings } from './coreAdapter';
 
 export function triggerForegroundReminder(event: ReminderEvent, settings: ReminderSettings): void {
   if (settings.vibrationEnabled) {

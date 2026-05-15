@@ -1,4 +1,4 @@
-﻿import { createEmptyLocalState, type LocalState } from './coreAdapter';
+import { createEmptyLocalState, type LocalState } from './coreAdapter';
 
 const STORAGE_KEY = 'metro-reminder-local-state-v1';
 

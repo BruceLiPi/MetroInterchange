@@ -1,18 +1,50 @@
-﻿<view class="page">
-  <input class="input" value="{{name}}" placeholder="路线名称" bindinput="handleNameInput" />
+<view class="page">
+  <input class="input" value="{{name}}" placeholder="{{labels.routeName}}" bindinput="handleNameInput" />
 
-  <picker range="{{lines}}" range-key="name" bindchange="handleLineChange">
-    <view class="field">线路：{{selectedLineName}}</view>
+  <picker range="{{lines}}" range-key="name" value="{{selectedStartLineIndex}}" bindchange="handleStartLineChange">
+    <view class="field">
+      <text class="label">{{labels.startLine}}</text>
+      <text>{{selectedStartLineName}}</text>
+    </view>
   </picker>
 
-  <picker range="{{stations}}" range-key="name" bindchange="handleStartChange">
-    <view class="field">起点：{{startStationName}}</view>
+  <picker range="{{startStations}}" range-key="name" value="{{startStationIndex}}" bindchange="handleStartChange">
+    <view class="field">
+      <text class="label">{{labels.startStation}}</text>
+      <text>{{startStationName}}</text>
+    </view>
   </picker>
 
-  <picker range="{{stations}}" range-key="name" bindchange="handleEndChange">
-    <view class="field">终点：{{endStationName}}</view>
+  <picker range="{{lines}}" range-key="name" value="{{selectedEndLineIndex}}" bindchange="handleEndLineChange">
+    <view class="field">
+      <text class="label">{{labels.endLine}}</text>
+      <text>{{selectedEndLineName}}</text>
+    </view>
   </picker>
 
-  <textarea class="note" value="{{transferNote}}" placeholder="换乘备注" bindinput="handleNoteInput" />
-  <button class="primary" bindtap="handleSave">保存路线</button>
+  <picker range="{{endStations}}" range-key="name" value="{{endStationIndex}}" bindchange="handleEndChange">
+    <view class="field">
+      <text class="label">{{labels.endStation}}</text>
+      <text>{{endStationName}}</text>
+    </view>
+  </picker>
+
+  <textarea class="note" value="{{transferNote}}" placeholder="{{labels.transferNote}}" bindinput="handleNoteInput" />
+
+  <view class="options">
+    <view class="section-title">{{labels.routeOptions}}</view>
+    <view wx:if="{{routeOptions.length === 0}}" class="empty">{{routeOptionHint}}</view>
+    <view
+      wx:for="{{routeOptions}}"
+      wx:key="id"
+      data-index="{{index}}"
+      class="option {{selectedOptionIndex === index ? 'option-active' : ''}}"
+      bindtap="handleOptionSelect"
+    >
+      <view class="option-title">{{item.title}}</view>
+      <view class="option-body">{{item.body}}</view>
+    </view>
+  </view>
+
+  <button class="primary" bindtap="handleSave">{{labels.saveRoute}}</button>
 </view>

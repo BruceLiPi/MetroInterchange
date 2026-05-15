@@ -1,4 +1,4 @@
-﻿import type { ReminderSettings, StationId, Trip } from '../types';
+import type { ReminderSettings, StationId, Trip } from '../types';
 
 export interface ReminderEvent {
   targetStationId: StationId;

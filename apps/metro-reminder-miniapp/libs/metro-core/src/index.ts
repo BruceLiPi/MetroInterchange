@@ -1,6 +1,7 @@
-﻿export { validateMetroDataSet } from './data/validators';
+export { validateMetroDataSet } from './data/validators';
 export { wuhanMetroData } from './data/wuhan';
 export { buildRoutePlan } from './routing/buildRoutePlan';
+export { findRouteOptions } from './routing/findRouteOptions';
 export { DEFAULT_REMINDER_SETTINGS } from './settings/defaults';
 export { createEmptyLocalState } from './storage/schema';
 export { advanceTrip } from './trip/advanceTrip';
@@ -10,6 +11,7 @@ export { evaluateReminder, markReminderSent } from './trip/reminderState';
 export { getWrongDirectionWarning } from './trip/wrongDirection';
 export { updateTimingProfile } from './trip/timingProfile';
 export type { RoutePlan } from './routing/buildRoutePlan';
+export type { RouteOption, RouteOptionRequest } from './routing/findRouteOptions';
 export type { LocalState } from './storage/schema';
 export type { ReminderEvent } from './trip/reminderState';
 export type * from './types';
