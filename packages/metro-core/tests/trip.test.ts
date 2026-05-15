@@ -24,7 +24,7 @@ const route: Route = {
       lineId: 'wuhan-line-4',
       fromStationId: 'wuhan-4-yuejiazui',
       toStationId: 'wuhan-4-zhongjiacun',
-      directionTerminalStationId: 'wuhan-4-huangjinkou'
+      directionTerminalStationId: 'wuhan-4-bailin'
     },
     {
       lineId: 'wuhan-line-6',
@@ -53,7 +53,7 @@ describe('trip lifecycle', () => {
     expect(trip.currentStationId).toBe('wuhan-8-wangjiadun');
     expect(trip.nextStationId).toBe('wuhan-4-yuejiazui');
     expect(corrected.currentStationId).toBe('wuhan-4-yuejiazui');
-    expect(corrected.nextStationId).toBe('wuhan-2-hongshanguangchang');
+    expect(corrected.nextStationId).toBe('wuhan-4-dongting');
     expect(corrected.correctionEvents).toEqual([
       { at: 5000, stationId: 'wuhan-4-yuejiazui', source: 'next' }
     ]);

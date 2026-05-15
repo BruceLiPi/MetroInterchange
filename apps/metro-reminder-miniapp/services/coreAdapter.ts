@@ -1,1 +1,1 @@
-﻿export * from '../../../packages/metro-core/src';
+export * from '../libs/metro-core/src/index';

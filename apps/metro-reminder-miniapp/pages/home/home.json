@@ -1,6 +1,6 @@
-﻿{
+{
   "usingComponents": {
     "route-card": "../../components/route-card/route-card"
   },
-  "navigationBarTitleText": "换乘提醒"
+  "navigationBarTitleText": "\u6362\u4e58\u63d0\u9192"
 }

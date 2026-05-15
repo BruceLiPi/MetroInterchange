@@ -17,7 +17,7 @@ const realTestRoute: Route = {
       lineId: 'wuhan-line-4',
       fromStationId: 'wuhan-4-yuejiazui',
       toStationId: 'wuhan-4-zhongjiacun',
-      directionTerminalStationId: 'wuhan-4-huangjinkou'
+      directionTerminalStationId: 'wuhan-4-bailin'
     },
     {
       lineId: 'wuhan-line-6',
@@ -36,8 +36,20 @@ describe('buildRoutePlan', () => {
 
     expect(plan.steps.map((step) => step.toStationId)).toEqual([
       'wuhan-4-yuejiazui',
+      'wuhan-4-dongting',
+      'wuhan-4-qingyuzui',
+      'wuhan-4-chuhehanjie',
       'wuhan-2-hongshanguangchang',
+      'wuhan-2-zhongnanlu',
+      'wuhan-4-meiyuanxiaoqu',
+      'wuhan-4-wuchanghuochezhan',
+      'wuhan-4-shouyilu',
+      'wuhan-4-fuxinglu',
+      'wuhan-4-lanjianglu',
       'wuhan-4-zhongjiacun',
+      'wuhan-6-mayinglu',
+      'wuhan-6-jiangang',
+      'wuhan-6-qianjincun',
       'wuhan-6-guobozhongxinbei'
     ]);
     expect(plan.targets.map((target) => ({ stationId: target.stationId, kind: target.kind, transferToLineId: target.transferToLineId }))).toEqual([

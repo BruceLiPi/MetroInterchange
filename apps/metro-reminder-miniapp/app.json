@@ -1,4 +1,4 @@
-﻿{
+{
   "pages": [
     "pages/home/home",
     "pages/route-edit/route-edit",
@@ -7,7 +7,7 @@
     "pages/settings/settings"
   ],
   "window": {
-    "navigationBarTitleText": "换乘提醒",
+    "navigationBarTitleText": "\u6362\u4e58\u63d0\u9192",
     "navigationBarBackgroundColor": "#111827",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#F5F7FA"
