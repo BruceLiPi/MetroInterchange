@@ -1,5 +1,6 @@
 ﻿import { describe, expect, it } from 'vitest';
 import {
+  advanceTrip,
   correctTripToStation,
   createTrip,
   evaluateReminder,
@@ -57,6 +58,29 @@ describe('trip lifecycle', () => {
     expect(corrected.correctionEvents).toEqual([
       { at: 5000, stationId: 'wuhan-4-yuejiazui', source: 'next' }
     ]);
+  });
+
+  it('advances stations by elapsed segment time without double-counting repeated ticks', () => {
+    const trip = createTrip(route, 1000);
+    const arrivedAtTransfer = advanceTrip(trip, 121000);
+    const oneSecondLater = advanceTrip(arrivedAtTransfer, 122000);
+
+    expect(arrivedAtTransfer.currentStationId).toBe('wuhan-4-yuejiazui');
+    expect(arrivedAtTransfer.nextStationId).toBe('wuhan-4-dongting');
+    expect(oneSecondLater.currentStationId).toBe('wuhan-4-yuejiazui');
+    expect(oneSecondLater.nextStationId).toBe('wuhan-4-dongting');
+  });
+
+  it('restarts timing from a manual correction station', () => {
+    const trip = createTrip(route, 1000);
+    const corrected = correctTripToStation(trip, 'wuhan-4-yuejiazui', 'next', 5000);
+    const beforeNextStation = advanceTrip(corrected, 124000);
+    const atNextStation = advanceTrip(corrected, 125000);
+
+    expect(beforeNextStation.currentStationId).toBe('wuhan-4-yuejiazui');
+    expect(beforeNextStation.nextStationId).toBe('wuhan-4-dongting');
+    expect(atNextStation.currentStationId).toBe('wuhan-4-dongting');
+    expect(atNextStation.nextStationId).toBe('wuhan-4-qingyuzui');
   });
 
   it('evaluates and marks reminders once', () => {

@@ -1,0 +1,8 @@
+<view class="page" wx:if="{{route}}">
+  <view class="title">{{route.name}}</view>
+  <view class="field">上车站：{{boardingStationName}}</view>
+  <view class="field">方向：{{directionName}}</view>
+  <view class="field">下一站：{{nextStationName}}</view>
+  <view class="hint">请确认方向和下一站，避免坐反。</view>
+  <button class="primary" bindtap="handleStart">开始提醒</button>
+</view>

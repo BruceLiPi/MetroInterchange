@@ -1,0 +1,51 @@
+.page {
+  padding: 18px;
+}
+
+.status {
+  padding: 20px;
+  background: #111827;
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+.label {
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.station {
+  margin-top: 8px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.next {
+  margin-top: 10px;
+  color: #e5e7eb;
+}
+
+.target,
+.warning {
+  margin-top: 14px;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.warning {
+  color: #b45309;
+  background: #fffbeb;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.secondary {
+  margin-top: 14px;
+}

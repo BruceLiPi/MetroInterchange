@@ -7,6 +7,7 @@ export function correctTripToStation(trip: Trip, stationId: StationId, source: C
 
   return {
     ...trip,
+    startedAt: at,
     currentStationId: stationId,
     ...(nextStationId ? { nextStationId } : {}),
     currentStepIndex,

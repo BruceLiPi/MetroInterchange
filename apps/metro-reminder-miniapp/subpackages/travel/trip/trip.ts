@@ -9,9 +9,9 @@ import {
   type ReminderEvent,
   type Route,
   type Trip
-} from '../../services/coreAdapter';
-import { loadLocalState } from '../../services/localStore';
-import { triggerForegroundReminder } from '../../services/reminderAdapter';
+} from '../../../services/coreAdapter';
+import { loadLocalState } from '../../../services/localStore';
+import { triggerForegroundReminder } from '../../../services/reminderAdapter';
 
 let timer: number | undefined;
 let activeTrip: Trip | undefined;
